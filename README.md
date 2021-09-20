@@ -21,28 +21,14 @@ public class CashbackHackService {
 **Задание:** Сделать ветку testng, в которой:
 
 1\. Добавить в зависимости TestNG:
-```groovy
-dependencies {
-    testImplementation 'org.testng:testng:7.1.0'
-}
-test {
-    useTestNG()
-}
-```
+
 2\. Написать простые автотесты (без параметризации).
 
 ### Часть 2. JUnit4
 **Задание:** Сделать ветку junit4, в которой:
 
 1\. Добавить в зависимости JUnit:
-```groovy
-dependencies {
-    testImplementation 'junit:junit:4.13'
-}
-test {
-    useJUnit()
-}
-```
+
 2\. Написать простые автотесты (без параметризации).
 
 **Об ошибках** В сервисе точно есть ошибка, поэтому один из ваших авто-тестов должен падать.
@@ -54,29 +40,11 @@ test {
 **Задание:** Из ветки junit4 создать ветку junit4-platform, в которой:
 
 1\. Добавить в зависимости JUnit Vintage:
-```groovy
-dependencies {
-    testImplementation 'junit:junit:4.13'
-    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.6.2'
-}
-test {
-    useJUnitPlatform()
-}
-```
+
 2\. Удостовериться, что тесты запускаются.
 
 3\. Добавить в зависимости JUnit Jupiter:
-```groovy
-dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.6.1'
-    testImplementation 'junit:junit:4.13'
-    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.6.2'
-}
-test {
-    useJUnitPlatform()
-}
-```
+
 4\. Написать те же тесты, но с использованием API JUnit Jupiter
 
 5\. Удостовериться, что запускаются и тесты JUnit4, и тесты JUnit Jupiter
